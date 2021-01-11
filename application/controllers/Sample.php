@@ -25,7 +25,7 @@ class Sample extends MY_Controller {
     
     public function phpinfo()
     {
-        phpinfo(INFO_MODULES);
+        phpinfo();
     }
 
 }
