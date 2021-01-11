@@ -10,6 +10,7 @@ class Sample extends MY_Controller {
 
 	public function index()
 	{
+        echo '<h1> TEST </h1>';
         debug($_ENV);
 	}
 
