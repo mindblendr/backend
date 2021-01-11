@@ -1,0 +1,8 @@
+version: 0.1
+env:
+  variables:
+    env: "test"
+phases:
+  pre_build:
+    commands:
+      - composer install
