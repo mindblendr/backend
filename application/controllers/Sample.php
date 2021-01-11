@@ -21,6 +21,11 @@ class Sample extends MY_Controller {
         $this->json->_display([
             'status' => $this->db->insert('user', ['name' => md5(rand(1,2000))]) ? 1 : 0
         ]);
-	}
+    }
+    
+    public function phpinfo()
+    {
+        phpinfo(INFO_MODULES);
+    }
 
 }
