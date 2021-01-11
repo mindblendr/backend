@@ -1,9 +1,6 @@
 <?php
 require 'vendor/autoload.php';
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__, '.env');
-$dotenv->load();
-
 function debug($object) {
 	if ($object) echo '<pre>', is_array($object) || is_object($object) ? print_r($object) : $object, '</pre>';
 	exit();
