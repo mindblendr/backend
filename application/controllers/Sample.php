@@ -11,7 +11,7 @@ class Sample extends MY_Controller {
 	public function index()
 	{
         $this->json->_display([
-            'data' => $this->db->get('user'),
+            'data' => $this->db->get('user')->result(),
             'status' => 1
         ]);
 	}
